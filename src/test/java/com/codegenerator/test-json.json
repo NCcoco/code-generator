@@ -1,0 +1,30 @@
+{
+  "src": "Images/Sun.png",
+  "name": "sun1",
+  "hOffset": 250,
+  "vOffset": 250,
+  "alignment": "center"
+},
+
+{
+  "src": {
+    "fieldType": "String",
+    "fieldCommentText": "连接地址"
+  },
+  "name": {
+    "fieldType": "String",
+    "fieldCommentText": "名称"
+  },
+  "hOffset": {
+    "fieldType": "Integer",
+    "fieldCommentText": "h偏移"
+  },
+  "vOffset": {
+    "fieldType": "Integer",
+    "fieldCommentText": "v偏移"
+  },
+  "alignment": {
+    "fieldType": "String",
+    "fieldCommentText": "某种属性"
+  }
+}
