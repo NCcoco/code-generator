@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>代码生成器首页</title>
-    <script th:replace="@{head/common-head}"></script>
+    <script th:replace="head/common-head"></script>
 </head>
 <body>
     <section id="navbar" class="container">
@@ -292,13 +292,23 @@
 <script type="text/javascript">
 
 $(function(){
+// 使用vue实现数据管理
+let vm = new Vue({
+        el: '#content-vo-config',
+        data: {
+            // 显示的数据
+        }
+
+})
+
+
 // 给json内容框绑定格式化函数
 $("#json_text").on("blur", function() {
     formatJson("json_text", "json_text")
 })
 
 // 定义一个数组，将所有步骤的面板对象都装起来
-$content_array = [$("#content-json"), $("#content-bean-config"), $("#content-dao-config"),
+let $content_array = [$("#content-json"), $("#content-bean-config"), $("#content-dao-config"),
     $("content-dao-config"), $("#content-service-config"), $("#content-vo-config"),
     $("#content-controller-config")]
 
